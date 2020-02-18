@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name pihat-rescue)(type Legacy)(uri ${KIPRJMOD}/pihat-rescue.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/power.lib)(options "")(descr ""))
+  (lib (name Device)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Device.lib)(options "")(descr ""))
+  (lib (name Transistor_FET)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/Transistor_FET.lib)(options "")(descr ""))
+)
