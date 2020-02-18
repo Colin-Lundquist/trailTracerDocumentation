@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:pihat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
@@ -484,7 +483,7 @@ GPIO_3
 Connection ~ 6050 4450
 Connection ~ 7000 3550
 Text GLabel 7450 4450 2    50   Input ~ 0
-GPIO_17
+GPIO_2
 Text Label 8450 3600 2    50   ~ 0
 PAN_SERVO_PIN
 Text Label 8450 4500 2    50   ~ 0
@@ -492,7 +491,7 @@ TILT_SERVO_PIN
 Wire Wire Line
 	7000 3550 7450 3550
 Text GLabel 7450 3550 2    50   Input ~ 0
-GPIO_27
+GPIO_3
 Wire Wire Line
 	6050 4450 7450 4450
 $Comp
@@ -515,7 +514,7 @@ GPIO_17
 Text GLabel 1250 1700 0    50   Input ~ 0
 GPIO_27
 $Comp
-L Connector_Generic:Conn_01x03 J1
+L pihat-rescue:Conn_01x03-Connector_Generic J1
 U 1 1 5E51AE8D
 P 5300 2550
 F 0 "J1" V 5264 2362 50  0000 R CNN
@@ -529,7 +528,7 @@ Wire Wire Line
 	5400 2750 5400 4450
 Connection ~ 5400 4450
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L pihat-rescue:Conn_01x03-Connector_Generic J2
 U 1 1 5E545433
 P 6250 2550
 F 0 "J2" V 6214 2362 50  0000 R CNN

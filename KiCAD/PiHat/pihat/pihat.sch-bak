@@ -515,12 +515,12 @@ GPIO_17
 Text GLabel 1250 1700 0    50   Input ~ 0
 GPIO_27
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J1
 U 1 1 5E51AE8D
 P 5300 2550
-F 0 "J?" V 5264 2362 50  0000 R CNN
+F 0 "J1" V 5264 2362 50  0000 R CNN
 F 1 "Conn_01x03" V 5173 2362 50  0000 R CNN
-F 2 "" H 5300 2550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5300 2550 50  0001 C CNN
 F 3 "~" H 5300 2550 50  0001 C CNN
 	1    5300 2550
 	0    -1   -1   0   
@@ -529,12 +529,12 @@ Wire Wire Line
 	5400 2750 5400 4450
 Connection ~ 5400 4450
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J2
 U 1 1 5E545433
 P 6250 2550
-F 0 "J?" V 6214 2362 50  0000 R CNN
+F 0 "J2" V 6214 2362 50  0000 R CNN
 F 1 "Conn_01x03" V 6123 2362 50  0000 R CNN
-F 2 "" H 6250 2550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6250 2550 50  0001 C CNN
 F 3 "~" H 6250 2550 50  0001 C CNN
 	1    6250 2550
 	0    -1   -1   0   
