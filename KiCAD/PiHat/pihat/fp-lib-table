@@ -1,3 +1,2 @@
 (fp_lib_table
-  (lib (name trailTracer)(type KiCad)(uri ~/KiCAD/trailTracer.pretty)(options "")(descr ""))
 )

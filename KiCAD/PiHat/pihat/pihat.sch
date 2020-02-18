@@ -284,8 +284,6 @@ Wire Wire Line
 	2900 2300 3950 2300
 Wire Wire Line
 	2900 2900 3950 2900
-Wire Wire Line
-	6350 2750 6350 3550
 Connection ~ 6650 3850
 Wire Wire Line
 	6650 4150 6650 3850
@@ -317,7 +315,6 @@ F 3 "~" H 7000 3700 50  0001 C CNN
 	1    7000 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 6350 3550
 Wire Wire Line
 	6350 4150 6350 4000
 Wire Wire Line
@@ -480,20 +477,14 @@ Text GLabel 1250 1200 0    50   Input ~ 0
 GPIO_2
 Text GLabel 1250 1300 0    50   Input ~ 0
 GPIO_3
-Connection ~ 6050 4450
-Connection ~ 7000 3550
 Text GLabel 7450 4450 2    50   Input ~ 0
 GPIO_2
 Text Label 8450 3600 2    50   ~ 0
 PAN_SERVO_PIN
 Text Label 8450 4500 2    50   ~ 0
 TILT_SERVO_PIN
-Wire Wire Line
-	7000 3550 7450 3550
 Text GLabel 7450 3550 2    50   Input ~ 0
 GPIO_3
-Wire Wire Line
-	6050 4450 7450 4450
 $Comp
 L pihat-rescue:GND-power #PWR03
 U 1 1 5E5030B3
@@ -518,24 +509,121 @@ L pihat-rescue:Conn_01x03-Connector_Generic J1
 U 1 1 5E51AE8D
 P 5300 2550
 F 0 "J1" V 5264 2362 50  0000 R CNN
-F 1 "Conn_01x03" V 5173 2362 50  0000 R CNN
+F 1 "Pan Servo Connector" V 5400 2900 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5300 2550 50  0001 C CNN
 F 3 "~" H 5300 2550 50  0001 C CNN
 	1    5300 2550
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5400 2750 5400 4450
-Connection ~ 5400 4450
 $Comp
 L pihat-rescue:Conn_01x03-Connector_Generic J2
 U 1 1 5E545433
 P 6250 2550
 F 0 "J2" V 6214 2362 50  0000 R CNN
-F 1 "Conn_01x03" V 6123 2362 50  0000 R CNN
+F 1 "Tilt Servo Connector" V 6350 2850 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6250 2550 50  0001 C CNN
 F 3 "~" H 6250 2550 50  0001 C CNN
 	1    6250 2550
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Connector:Jack-DC J4
+U 1 1 5E4C915C
+P 11100 1950
+F 0 "J4" H 11157 2275 50  0000 C CNN
+F 1 "Jack-DC" H 11157 2184 50  0000 C CNN
+F 2 "" H 11150 1910 50  0001 C CNN
+F 3 "~" H 11150 1910 50  0001 C CNN
+	1    11100 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5E4CBC36
+P 8100 1350
+F 0 "J3" V 8050 1000 50  0000 L CNN
+F 1 "Fan" V 8200 1250 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8100 1350 50  0001 C CNN
+F 3 "~" H 8100 1350 50  0001 C CNN
+	1    8100 1350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1250 1400 0    50   Input ~ 0
+GPIO_4
+$Comp
+L power:+5V #PWR07
+U 1 1 5E4D6344
+P 8100 1850
+F 0 "#PWR07" H 8100 1700 50  0001 C CNN
+F 1 "+5V" H 8115 2023 50  0000 C CNN
+F 2 "" H 8100 1850 50  0001 C CNN
+F 3 "" H 8100 1850 50  0001 C CNN
+	1    8100 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 1550 8000 1650
+Wire Wire Line
+	8100 1550 8100 1850
+Text GLabel 8200 2150 3    50   Input ~ 0
+GPIO_4
+Text GLabel 8300 2150 3    50   Input ~ 0
+GPIO_17
+Wire Wire Line
+	8200 1550 8200 2150
+Text Label 8400 2300 0    50   ~ 0
+FAN_PIN
+Text Label 7600 2300 0    50   ~ 0
+FAN_TACH_PIN
+Wire Wire Line
+	8300 2150 8300 1550
+$Comp
+L power:GND #PWR06
+U 1 1 5E4D5B19
+P 8000 1650
+F 0 "#PWR06" H 8000 1400 50  0001 C CNN
+F 1 "GND" H 8005 1477 50  0000 C CNN
+F 2 "" H 8000 1650 50  0001 C CNN
+F 3 "" H 8000 1650 50  0001 C CNN
+	1    8000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5E518064
+P 6800 4450
+F 0 "R5" V 6600 4350 50  0000 L CNN
+F 1 "220R" V 6700 4350 50  0000 L CNN
+F 2 "trailTracer:Yageo_R0805" H 6800 4450 50  0001 C CNN
+F 3 "~" H 6800 4450 50  0001 C CNN
+	1    6800 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 4450 5400 2750
+Connection ~ 5400 4450
+Wire Wire Line
+	7450 4450 6900 4450
+Wire Wire Line
+	6700 4450 6050 4450
+Connection ~ 6050 4450
+Wire Wire Line
+	6350 3550 6350 2750
+Connection ~ 6350 3550
+$Comp
+L Device:R_Small R6
+U 1 1 5E52C769
+P 7250 3550
+F 0 "R6" V 7350 3450 50  0000 L CNN
+F 1 "220R" V 7450 3450 50  0000 L CNN
+F 2 "trailTracer:Yageo_R0805" H 7250 3550 50  0001 C CNN
+F 3 "~" H 7250 3550 50  0001 C CNN
+	1    7250 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7350 3550 7450 3550
+Wire Wire Line
+	7150 3550 7000 3550
+Connection ~ 7000 3550
 $EndSCHEMATC
