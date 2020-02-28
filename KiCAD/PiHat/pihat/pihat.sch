@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:pihat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date "15 nov 2012"
 Rev ""
@@ -532,7 +533,7 @@ U 1 1 5E4CBC36
 P 12400 4100
 F 0 "J3" V 12350 3750 50  0000 L CNN
 F 1 "Fan" V 12500 4000 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 12400 4100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 12400 4100 50  0001 C CNN
 F 3 "~" H 12400 4100 50  0001 C CNN
 	1    12400 4100
 	0    -1   -1   0   
@@ -542,39 +543,39 @@ GPIO_4
 $Comp
 L power:+5V #PWR07
 U 1 1 5E4D6344
-P 12400 4600
-F 0 "#PWR07" H 12400 4450 50  0001 C CNN
-F 1 "+5V" H 12415 4773 50  0000 C CNN
-F 2 "" H 12400 4600 50  0001 C CNN
-F 3 "" H 12400 4600 50  0001 C CNN
-	1    12400 4600
+P 12500 4600
+F 0 "#PWR07" H 12500 4450 50  0001 C CNN
+F 1 "+5V" H 12515 4773 50  0000 C CNN
+F 2 "" H 12500 4600 50  0001 C CNN
+F 3 "" H 12500 4600 50  0001 C CNN
+	1    12500 4600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12300 4300 12300 4400
+	12600 4300 12600 4400
 Wire Wire Line
-	12400 4300 12400 4600
-Text GLabel 12500 4900 3    50   Input ~ 0
+	12500 4300 12500 4600
+Text GLabel 12400 4900 3    50   Input ~ 0
 GPIO_4
-Text GLabel 12600 4900 3    50   Input ~ 0
+Text GLabel 12300 4900 3    50   Input ~ 0
 GPIO_17
 Wire Wire Line
-	12500 4300 12500 4900
-Text Label 12700 5050 0    50   ~ 0
+	12400 4300 12400 4900
+Text Label 14650 5500 0    50   ~ 0
 FAN_PIN
-Text Label 11900 5050 0    50   ~ 0
+Text Label 13850 5500 0    50   ~ 0
 FAN_TACH_PIN
 Wire Wire Line
-	12600 4900 12600 4300
+	12300 4900 12300 4300
 $Comp
 L power:GND #PWR06
 U 1 1 5E4D5B19
-P 12300 4400
-F 0 "#PWR06" H 12300 4150 50  0001 C CNN
-F 1 "GND" H 12305 4227 50  0000 C CNN
-F 2 "" H 12300 4400 50  0001 C CNN
-F 3 "" H 12300 4400 50  0001 C CNN
-	1    12300 4400
+P 12600 4400
+F 0 "#PWR06" H 12600 4150 50  0001 C CNN
+F 1 "GND" H 12605 4227 50  0000 C CNN
+F 2 "" H 12600 4400 50  0001 C CNN
+F 3 "" H 12600 4400 50  0001 C CNN
+	1    12600 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -655,12 +656,22 @@ Wire Wire Line
 $Comp
 L Regulator_Switching:TPS5431DDA U1
 U 1 1 5E503B5A
-P 11600 3200
-F 0 "U1" H 11600 3667 50  0000 C CNN
-F 1 "TPS5431DDA" H 11600 3576 50  0000 C CNN
-F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 11650 2850 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 11600 3200 50  0001 C CNN
-	1    11600 3200
+P 12250 2600
+F 0 "U1" H 12250 3067 50  0000 C CNN
+F 1 "TPS5431DDA" H 12250 2976 50  0000 C CNN
+F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 12300 2250 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps5430.pdf" H 12250 2600 50  0001 C CNN
+	1    12250 2600
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 20050 2950 5850 4000
+U 5E5833CB
+F0 "Power_Sheet" 50
+F1 "Power.sch" 50
+$EndSheet
+Text GLabel 13700 4000 1    50   Input ~ 0
+Pi_Power+
+Text GLabel 13800 4000 1    50   Input ~ 0
+Pi_Power_-
 $EndSCHEMATC
