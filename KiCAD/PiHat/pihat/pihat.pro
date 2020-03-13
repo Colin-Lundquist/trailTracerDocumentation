@@ -1,4 +1,4 @@
-update=2/17/2020 9:51:38 PM
+update=3/8/2020 8:31:24 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -19,7 +19,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=C:/Users/Colin/Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
@@ -44,6 +44,7 @@ MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.2
 TrackWidth2=0.4
+TrackWidth3=0.6
 ViaDiameter1=0.9
 ViaDrill1=0.6
 dPairWidth1=0.2

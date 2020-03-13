@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:pihat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -189,21 +188,6 @@ F 3 "" H 2950 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
-U 1 1 5E5AB8F6
-P 2250 4250
-F 0 "#PWR09" H 2250 4000 50  0001 C CNN
-F 1 "GND" H 2255 4077 50  0000 C CNN
-F 2 "" H 2250 4250 50  0001 C CNN
-F 3 "" H 2250 4250 50  0001 C CNN
-	1    2250 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 4150 2250 4150
-Wire Wire Line
-	2250 4150 2250 4250
-$Comp
 L Device:Solar_Cell #SC1
 U 1 1 5E5BBB14
 P 4550 3850
@@ -297,4 +281,24 @@ Text GLabel 3250 2300 0    50   Input ~ 0
 Pi_Power_+
 Text GLabel 3400 2300 2    50   Input ~ 0
 Pi_Power_-
+Wire Wire Line
+	2250 4150 2250 4250
+Wire Wire Line
+	2700 4150 2250 4150
+$Comp
+L power:GND #PWR09
+U 1 1 5E5AB8F6
+P 2250 4250
+F 0 "#PWR09" H 2250 4000 50  0001 C CNN
+F 1 "GND" H 2255 4077 50  0000 C CNN
+F 2 "" H 2250 4250 50  0001 C CNN
+F 3 "" H 2250 4250 50  0001 C CNN
+	1    2250 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 5150 0    50   Input ~ 0
+B+
+Wire Wire Line
+	1150 5150 1100 5150
+Connection ~ 1150 5150
 $EndSCHEMATC
