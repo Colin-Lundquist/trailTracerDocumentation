@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pihat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -279,8 +280,6 @@ Wire Wire Line
 	3450 2500 3450 2350
 Text GLabel 3250 2300 0    50   Input ~ 0
 Pi_Power_+
-Text GLabel 3400 2300 2    50   Input ~ 0
-Pi_Power_-
 Wire Wire Line
 	2250 4150 2250 4250
 Wire Wire Line

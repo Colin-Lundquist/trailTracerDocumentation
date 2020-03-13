@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:pihat-cache
 EELAYER 30 0
 EELAYER END
 $Descr A1 33110 23386
@@ -471,8 +472,6 @@ Connection ~ 9250 5000
 Text GLabel 13850 4550 2    50   Input ~ 0
 Pi_Power+
 Text GLabel 13800 4000 1    50   Input ~ 0
-Pi_Power_-
-Text GLabel 13700 4000 1    50   Input ~ 0
 Pi_Power+
 Wire Wire Line
 	13700 4250 13700 4600
@@ -1204,7 +1203,7 @@ L Device:R_Small R10
 U 1 1 5E89A304
 P 14200 4300
 F 0 "R10" V 14300 4150 50  0000 C CNN
-F 1 "R_Small" V 14300 4400 50  0000 C CNN
+F 1 "470" V 14300 4400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14200 4300 50  0001 C CNN
 F 3 "~" H 14200 4300 50  0001 C CNN
 	1    14200 4300
@@ -1259,7 +1258,7 @@ L Device:R_Small R12
 U 1 1 5E8C473A
 P 12800 9900
 F 0 "R12" V 12900 9750 50  0000 C CNN
-F 1 "R_Small" V 12900 10000 50  0000 C CNN
+F 1 "120R" V 12900 10000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12800 9900 50  0001 C CNN
 F 3 "~" H 12800 9900 50  0001 C CNN
 	1    12800 9900
