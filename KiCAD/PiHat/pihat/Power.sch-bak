@@ -157,11 +157,6 @@ Wire Wire Line
 Connection ~ 4750 5700
 Wire Wire Line
 	2700 5050 2700 5150
-Wire Wire Line
-	2700 5150 1150 5150
-Wire Wire Line
-	1150 5150 1150 5700
-Connection ~ 1150 5700
 $Comp
 L power:GND #PWR012
 U 1 1 5E5A677F
@@ -216,7 +211,7 @@ L Diode:1N4001 #D1
 U 1 1 5E5C0244
 P 4100 3500
 F 0 "#D1" H 4100 3716 50  0000 C CNN
-F 1 "1N4001" H 4100 3625 50  0000 C CNN
+F 1 "RB085T" H 4100 3625 50  0000 C CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4100 3325 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4100 3500 50  0001 C CNN
 	1    4100 3500
@@ -230,8 +225,6 @@ Wire Wire Line
 	3200 4150 3200 3500
 Wire Wire Line
 	3200 3500 3950 3500
-Wire Wire Line
-	3200 3500 3200 2950
 Connection ~ 3200 3500
 $Comp
 L Connector:Jack-DC #J1
@@ -259,11 +252,6 @@ Wire Wire Line
 	1750 3150 1900 3150
 Wire Wire Line
 	1900 3150 1900 3350
-Wire Wire Line
-	1750 2950 3200 2950
-Wire Wire Line
-	3200 2950 3200 2350
-Connection ~ 3200 2950
 $Comp
 L power:GND #PWR010
 U 1 1 5E5D113A
@@ -277,10 +265,6 @@ F 3 "" H 3450 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 2500 3450 2350
-Text GLabel 3250 2300 0    50   Input ~ 0
-Pi_Power_+
-Text GLabel 3400 2300 2    50   Input ~ 0
-Pi_Power_-
 Wire Wire Line
 	2250 4150 2250 4250
 Wire Wire Line
@@ -296,9 +280,42 @@ F 3 "" H 2250 4250 50  0001 C CNN
 	1    2250 4250
 	1    0    0    -1  
 $EndComp
-Text GLabel 1100 5150 0    50   Input ~ 0
+Text GLabel 1150 5150 0    50   Input ~ 0
 B+
+$Comp
+L Diode:1N4001 #D2
+U 1 1 5E6F2127
+P 2500 2950
+F 0 "#D2" H 2500 3166 50  0000 C CNN
+F 1 "RB085T" H 2500 3075 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 2775 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2500 2950 50  0001 C CNN
+	1    2500 2950
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	1150 5150 1100 5150
-Connection ~ 1150 5150
+	2650 2950 3200 2950
+Connection ~ 3200 2950
+Wire Wire Line
+	3200 2950 3200 3500
+Wire Wire Line
+	2350 2950 1750 2950
+Connection ~ 1150 5700
+Wire Wire Line
+	1150 5150 1150 5700
+Wire Wire Line
+	2700 5150 1150 5150
+Wire Wire Line
+	3200 2350 3200 2950
+$Comp
+L power:+12V #PWR0126
+U 1 1 5E7D68BA
+P 3200 2350
+F 0 "#PWR0126" H 3200 2200 50  0001 C CNN
+F 1 "+12V" H 3215 2523 50  0000 C CNN
+F 2 "" H 3200 2350 50  0001 C CNN
+F 3 "" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
