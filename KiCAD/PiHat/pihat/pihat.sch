@@ -613,7 +613,7 @@ F 3 "" H 9850 4650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L trailTracer:TPS5430-Q1 U1
+L pihat-rescue:TPS5430-Q1-trailTracer U1
 U 1 1 5E62FD94
 P 3700 9800
 F 0 "U1" H 3700 10250 50  0000 C CNN
@@ -686,13 +686,8 @@ F 3 "~" H 6000 10000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 9600 5550 9600
-Connection ~ 4950 9600
 Wire Wire Line
 	5550 9600 5550 9700
-Wire Wire Line
-	4950 9600 5100 9600
-Wire Wire Line
-	4950 9700 4950 9600
 $Comp
 L Device:CP1_Small C3
 U 1 1 5E5BADB2
@@ -703,30 +698,6 @@ F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5550 9800 50  0001 C CNN
 F 3 "~" H 5550 9800 50  0001 C CNN
 	1    5550 9800
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 10000 4950 10100
-$Comp
-L power:GND #PWR0111
-U 1 1 5E5B6D0F
-P 4950 10100
-F 0 "#PWR0111" H 4950 9850 50  0001 C CNN
-F 1 "GND" H 4955 9927 50  0000 C CNN
-F 2 "" H 4950 10100 50  0001 C CNN
-F 3 "" H 4950 10100 50  0001 C CNN
-	1    4950 10100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:B340 D1
-U 1 1 5E5B50E4
-P 4950 9850
-F 0 "D1" V 4904 9929 50  0000 L CNN
-F 1 "B340" V 4995 9929 50  0000 L CNN
-F 2 "trailTracer:DO-214" H 4950 9675 50  0001 C CNN
-F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 4950 9850 50  0001 C CNN
-	1    4950 9850
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:L L1
@@ -743,12 +714,8 @@ Wire Wire Line
 	4300 10400 6000 10400
 Wire Wire Line
 	4150 10200 4150 10450
-Wire Wire Line
-	4650 9600 4950 9600
 Connection ~ 4650 9600
 Connection ~ 5550 9600
-Wire Wire Line
-	8600 7750 8600 8750
 Connection ~ 7250 7750
 Wire Wire Line
 	7250 8000 7250 7750
@@ -777,8 +744,6 @@ F 3 "~" H 7250 8100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 8750 8800 8750
-Wire Wire Line
 	8400 7750 8600 7750
 Wire Wire Line
 	5550 9600 6000 9600
@@ -799,7 +764,7 @@ Wire Wire Line
 	6000 9900 6000 9600
 Connection ~ 6000 9600
 $Comp
-L trailTracer:ATTiny85 U3
+L pihat-rescue:ATTiny85-trailTracer U3
 U 1 1 5E5C840A
 P 9200 9000
 F 0 "U3" H 9200 9515 50  0000 C CNN
@@ -820,8 +785,6 @@ F 3 "" H 9750 8350 50  0001 C CNN
 	1    9750 8350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 8750 9600 8750
 $Comp
 L power:GND #PWR0115
 U 1 1 5E5D5113
@@ -835,33 +798,6 @@ F 3 "" H 8650 9650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8800 9200 8650 9200
-Wire Wire Line
-	9750 8350 9750 8500
-Connection ~ 9750 8500
-Wire Wire Line
-	9750 8500 9750 8750
-Wire Wire Line
-	8650 9200 8650 9550
-Wire Wire Line
-	9850 8500 9750 8500
-$Comp
-L Device:C_Small C4
-U 1 1 5E5E3F0A
-P 9950 8500
-F 0 "C4" V 9700 8650 50  0000 C CNN
-F 1 "10nF" V 9800 8650 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9950 8500 50  0001 C CNN
-F 3 "~" H 9950 8500 50  0001 C CNN
-	1    9950 8500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10050 8500 10050 9550
-Wire Wire Line
-	10050 9550 8650 9550
-Connection ~ 8650 9550
-Wire Wire Line
-	8650 9550 8650 9650
 $Comp
 L Sensor_Temperature:TMP36xS U2
 U 1 1 5E620DCA
@@ -907,51 +843,7 @@ $EndComp
 Wire Wire Line
 	7900 8350 7900 8150
 $Comp
-L trailTracer:Pad P2
-U 1 1 5E6A2F6F
-P 9900 8900
-F 0 "P2" V 9849 8828 50  0000 L CNN
-F 1 "Pad" V 9940 8828 50  0000 L CNN
-F 2 "trailTracer:Pad" H 9900 8950 50  0001 C CNN
-F 3 "" H 9900 8950 50  0001 C CNN
-	1    9900 8900
-	0    1    1    0   
-$EndComp
-$Comp
-L trailTracer:Pad P3
-U 1 1 5E6A4BF6
-P 9900 9050
-F 0 "P3" V 9849 8978 50  0000 L CNN
-F 1 "Pad" V 9940 8978 50  0000 L CNN
-F 2 "trailTracer:Pad" H 9900 9100 50  0001 C CNN
-F 3 "" H 9900 9100 50  0001 C CNN
-	1    9900 9050
-	0    1    1    0   
-$EndComp
-$Comp
-L trailTracer:Pad P6
-U 1 1 5E6F2C38
-P 9900 9200
-F 0 "P6" V 9849 9128 50  0000 L CNN
-F 1 "Pad" V 9940 9128 50  0000 L CNN
-F 2 "trailTracer:Pad" H 9900 9250 50  0001 C CNN
-F 3 "" H 9900 9250 50  0001 C CNN
-	1    9900 9200
-	0    1    1    0   
-$EndComp
-$Comp
-L trailTracer:Pad P5
-U 1 1 5E6F7A3A
-P 8500 9050
-F 0 "P5" V 8449 8978 50  0000 L CNN
-F 1 "Pad" V 8540 8978 50  0000 L CNN
-F 2 "trailTracer:Pad" H 8500 9100 50  0001 C CNN
-F 3 "" H 8500 9100 50  0001 C CNN
-	1    8500 9050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L trailTracer:TE_OJ-SH-105LM U4
+L pihat-rescue:TE_OJ-SH-105LM-trailTracer U4
 U 1 1 5E6BDF85
 P 11650 9100
 F 0 "U4" H 11650 9165 50  0000 C CNN
@@ -991,19 +883,6 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 10750 9500 50  0001 C CNN
 	1    10750 9500
 	0    1    1    0   
 $EndComp
-$Comp
-L trailTracer:Pad P7
-U 1 1 5E6EBE98
-P 10750 8900
-F 0 "P7" H 10828 8738 50  0000 L CNN
-F 1 "Pad" H 10828 8647 50  0000 L CNN
-F 2 "trailTracer:Pad" H 10750 8950 50  0001 C CNN
-F 3 "" H 10750 8950 50  0001 C CNN
-	1    10750 8900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10750 9200 10750 9300
 Wire Wire Line
 	11050 9300 10750 9300
 Connection ~ 10750 9300
@@ -1025,63 +904,58 @@ F 3 "" H 10750 9850 50  0001 C CNN
 	1    10750 9850
 	1    0    0    -1  
 $EndComp
-Text Notes 10250 8900 0    50   ~ 0
-P7: Jump to ATTiny85 output pad.\n
 $Comp
 L Device:R_Small R11
 U 1 1 5E71E70E
-P 8150 9150
-F 0 "R11" V 7954 9150 50  0000 C CNN
-F 1 "10K" V 8045 9150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 8150 9150 50  0001 C CNN
-F 3 "~" H 8150 9150 50  0001 C CNN
-	1    8150 9150
+P 8150 9300
+F 0 "R11" V 7954 9300 50  0000 C CNN
+F 1 "10K" V 8045 9300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8150 9300 50  0001 C CNN
+F 3 "~" H 8150 9300 50  0001 C CNN
+	1    8150 9300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5E72F6C1
-P 8150 9350
-F 0 "#PWR01" H 8150 9100 50  0001 C CNN
-F 1 "GND" H 8155 9177 50  0000 C CNN
-F 2 "" H 8150 9350 50  0001 C CNN
-F 3 "" H 8150 9350 50  0001 C CNN
-	1    8150 9350
+P 8150 9500
+F 0 "#PWR01" H 8150 9250 50  0001 C CNN
+F 1 "GND" H 8155 9327 50  0000 C CNN
+F 2 "" H 8150 9500 50  0001 C CNN
+F 3 "" H 8150 9500 50  0001 C CNN
+	1    8150 9500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8150 9250 8150 9350
+	8150 9400 8150 9500
 $Comp
-L trailTracer:Pad P4
+L pihat-rescue:Pad-trailTracer P4
 U 1 1 5E6B9FE2
-P 7300 8900
-F 0 "P4" V 7300 8950 50  0000 R CNN
-F 1 "Pad" V 7400 9000 50  0000 R CNN
-F 2 "trailTracer:Pad" H 7300 8950 50  0001 C CNN
-F 3 "" H 7300 8950 50  0001 C CNN
-	1    7300 8900
+P 7300 9050
+F 0 "P4" V 7300 9100 50  0000 R CNN
+F 1 "Pad" V 7400 9150 50  0000 R CNN
+F 2 "trailTracer:Pad" H 7300 9100 50  0001 C CNN
+F 3 "" H 7300 9100 50  0001 C CNN
+	1    7300 9050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R9
 U 1 1 5E641330
-P 7900 8900
-F 0 "R9" V 7704 8900 50  0000 C CNN
-F 1 "15K" V 7795 8900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7900 8900 50  0001 C CNN
-F 3 "~" H 7900 8900 50  0001 C CNN
-	1    7900 8900
+P 7900 9050
+F 0 "R9" V 7704 9050 50  0000 C CNN
+F 1 "15K" V 7795 9050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7900 9050 50  0001 C CNN
+F 3 "~" H 7900 9050 50  0001 C CNN
+	1    7900 9050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8150 9050 8150 8900
+	8150 9200 8150 9050
 Wire Wire Line
-	8150 8900 8800 8900
+	8150 9050 8000 9050
 Wire Wire Line
-	8150 8900 8000 8900
-Connection ~ 8150 8900
-Wire Wire Line
-	7800 8900 7600 8900
+	7800 9050 7600 9050
 Text GLabel 12500 9650 2    50   Input ~ 0
 PI_5V
 Connection ~ 9550 4100
@@ -1328,4 +1202,60 @@ Wire Wire Line
 Wire Wire Line
 	13800 4650 13800 4900
 Connection ~ 13800 4650
+Text GLabel 8800 8900 0    50   Input ~ 0
+TINY_B4
+Text GLabel 10650 9100 0    50   Input ~ 0
+TINY_B4
+Wire Wire Line
+	10650 9100 10750 9100
+Wire Wire Line
+	10750 9100 10750 9300
+Wire Wire Line
+	8150 9050 8800 9050
+Connection ~ 8150 9050
+Wire Wire Line
+	9750 8750 9600 8750
+Text GLabel 9600 8900 2    50   Input ~ 0
+TINY_B2
+Text GLabel 8600 7750 2    50   Input ~ 0
+TINY_B2
+Wire Wire Line
+	5000 10000 5000 10100
+$Comp
+L power:GND #PWR0127
+U 1 1 5E9C521F
+P 5000 10100
+F 0 "#PWR0127" H 5000 9850 50  0001 C CNN
+F 1 "GND" H 5005 9927 50  0000 C CNN
+F 2 "" H 5000 10100 50  0001 C CNN
+F 3 "" H 5000 10100 50  0001 C CNN
+	1    5000 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:B340 D5
+U 1 1 5E9C5225
+P 5000 9850
+F 0 "D5" V 5050 9950 50  0000 L CNN
+F 1 "B340" V 5150 9950 50  0000 L CNN
+F 2 "Diode_THT:D_DO-15_P5.08mm_Vertical_AnodeUp" H 5000 9675 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 5000 9850 50  0001 C CNN
+	1    5000 9850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 9700 5000 9600
+Connection ~ 5000 9600
+Wire Wire Line
+	5000 9600 5100 9600
+Text GLabel 5550 1600 2    50   Input ~ 0
+GPIO_14
+Text GLabel 5550 1700 2    50   Input ~ 0
+GPIO_15
+Wire Wire Line
+	4650 9600 5000 9600
+Wire Wire Line
+	8650 9200 8650 9650
+Wire Wire Line
+	9750 8350 9750 8750
 $EndSCHEMATC

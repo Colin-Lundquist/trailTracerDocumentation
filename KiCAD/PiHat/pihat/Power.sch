@@ -14,9 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L trailTracer:18650_Cell #B3
+L pihat-rescue:18650_Cell-trailTracer #B3
 U 1 1 5E58A3E1
 P 1750 6950
+AR Path="/5E58A3E1" Ref="#B3"  Part="1" 
+AR Path="/5E5833CB/5E58A3E1" Ref="#B3"  Part="1" 
 F 0 "#B3" H 1750 7275 50  0000 C CNN
 F 1 "18650_Cell" H 1750 7184 50  0000 C CNN
 F 2 "" H 1750 6950 50  0001 C CNN
@@ -25,9 +27,11 @@ F 3 "" H 1750 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B7
+L pihat-rescue:18650_Cell-trailTracer #B7
 U 1 1 5E58B351
 P 2950 6950
+AR Path="/5E58B351" Ref="#B7"  Part="1" 
+AR Path="/5E5833CB/5E58B351" Ref="#B7"  Part="1" 
 F 0 "#B7" H 2950 7275 50  0000 C CNN
 F 1 "18650_Cell" H 2950 7184 50  0000 C CNN
 F 2 "" H 2950 6950 50  0001 C CNN
@@ -36,9 +40,11 @@ F 3 "" H 2950 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B10
+L pihat-rescue:18650_Cell-trailTracer #B10
 U 1 1 5E58B831
 P 4150 6950
+AR Path="/5E58B831" Ref="#B10"  Part="1" 
+AR Path="/5E5833CB/5E58B831" Ref="#B10"  Part="1" 
 F 0 "#B10" H 4150 7275 50  0000 C CNN
 F 1 "18650_Cell" H 4150 7184 50  0000 C CNN
 F 2 "" H 4150 6950 50  0001 C CNN
@@ -47,9 +53,11 @@ F 3 "" H 4150 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B2
+L pihat-rescue:18650_Cell-trailTracer #B2
 U 1 1 5E58D4A9
 P 1750 6350
+AR Path="/5E58D4A9" Ref="#B2"  Part="1" 
+AR Path="/5E5833CB/5E58D4A9" Ref="#B2"  Part="1" 
 F 0 "#B2" H 1750 6675 50  0000 C CNN
 F 1 "18650_Cell" H 1750 6584 50  0000 C CNN
 F 2 "" H 1750 6350 50  0001 C CNN
@@ -58,9 +66,11 @@ F 3 "" H 1750 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B6
+L pihat-rescue:18650_Cell-trailTracer #B6
 U 1 1 5E58D4AF
 P 2950 6350
+AR Path="/5E58D4AF" Ref="#B6"  Part="1" 
+AR Path="/5E5833CB/5E58D4AF" Ref="#B6"  Part="1" 
 F 0 "#B6" H 2950 6675 50  0000 C CNN
 F 1 "18650_Cell" H 2950 6584 50  0000 C CNN
 F 2 "" H 2950 6350 50  0001 C CNN
@@ -69,9 +79,11 @@ F 3 "" H 2950 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B9
+L pihat-rescue:18650_Cell-trailTracer #B9
 U 1 1 5E58D4B5
 P 4150 6350
+AR Path="/5E58D4B5" Ref="#B9"  Part="1" 
+AR Path="/5E5833CB/5E58D4B5" Ref="#B9"  Part="1" 
 F 0 "#B9" H 4150 6675 50  0000 C CNN
 F 1 "18650_Cell" H 4150 6584 50  0000 C CNN
 F 2 "" H 4150 6350 50  0001 C CNN
@@ -80,9 +92,11 @@ F 3 "" H 4150 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B1
+L pihat-rescue:18650_Cell-trailTracer #B1
 U 1 1 5E58D834
 P 1750 5800
+AR Path="/5E58D834" Ref="#B1"  Part="1" 
+AR Path="/5E5833CB/5E58D834" Ref="#B1"  Part="1" 
 F 0 "#B1" H 1750 6125 50  0000 C CNN
 F 1 "18650_Cell" H 1750 6034 50  0000 C CNN
 F 2 "" H 1750 5800 50  0001 C CNN
@@ -91,9 +105,11 @@ F 3 "" H 1750 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B5
+L pihat-rescue:18650_Cell-trailTracer #B5
 U 1 1 5E58D83A
 P 2950 5800
+AR Path="/5E58D83A" Ref="#B5"  Part="1" 
+AR Path="/5E5833CB/5E58D83A" Ref="#B5"  Part="1" 
 F 0 "#B5" H 2950 6125 50  0000 C CNN
 F 1 "18650_Cell" H 2950 6034 50  0000 C CNN
 F 2 "" H 2950 5800 50  0001 C CNN
@@ -102,9 +118,11 @@ F 3 "" H 2950 5800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L trailTracer:18650_Cell #B8
+L pihat-rescue:18650_Cell-trailTracer #B8
 U 1 1 5E58D840
 P 4150 5800
+AR Path="/5E58D840" Ref="#B8"  Part="1" 
+AR Path="/5E5833CB/5E58D840" Ref="#B8"  Part="1" 
 F 0 "#B8" H 4150 6125 50  0000 C CNN
 F 1 "18650_Cell" H 4150 6034 50  0000 C CNN
 F 2 "" H 4150 5800 50  0001 C CNN
@@ -172,7 +190,7 @@ Wire Wire Line
 	4750 6850 4750 7250
 Connection ~ 4750 6850
 $Comp
-L trailTracer:UMLife_BMS #B4
+L pihat-rescue:UMLife_BMS-trailTracer #B4
 U 1 1 5E5AA195
 P 2950 4600
 F 0 "#B4" H 2572 4646 50  0000 R CNN

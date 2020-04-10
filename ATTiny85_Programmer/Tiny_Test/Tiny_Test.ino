@@ -21,24 +21,76 @@
 
   http://www.arduino.cc/en/Tutorial/Blink
 */
-#include <SoftwareSerial.h>
+//#include "Serial.h"
 
 #define RX 1   // *** D3, Pin 
-#define TX 0   // *** D4, Pin 
+#define TX 2   // *** D4, Pin 
 
-SoftwareSerial Serial(RX, TX);
+int toggle = 0;
+
+uint8_t red = 0;
+uint8_t blu = 64;
+uint8_t gre = 128;
+//SoftwareSerial Serial(RX, TX);
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
  
-  Serial.begin(9600);
-  //pinMode(0, OUTPUT);
+
+  pinMode(0, OUTPUT);
+  pinMode(1, OUTPUT);
+  pinMode(2, OUTPUT);
+  //pinMode(A0,INPUT);
+
+//  digitalWrite(0, LOW);
+//Serial.begin(9600);
+//  delay(1000);
+//  digitalWrite(0, HIGH);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  Serial.print("A");
-  delay(500);
+
+
+
+
+red++;
+blu++;
+gre++;
+
+analogWrite(0,red);
+analogWrite(1,blu);
+analogWrite(2,gre);
+
+delay(25);
+  //Serial.println(analogRead(A0));
+//  
+//  if(Serial.read() > 0) {
+//    digitalWrite(4, HIGH);
+//    delay(500);
+//  }
+//  else{
+//    digitalWrite(4, LOW);
+//  }
+
+//  delay(150);
+//  randomSeed(analogRead(1));
+//  random_int = random(3);
+//  if (random_int == 2){
+//    digitalWrite(0, 1);
+//    digitalWrite(2, 1);
+//    digitalWrite(3, 1);
+//    digitalWrite(4, 1);
+//    digitalWrite(5, 1);
+//  }
+//  else {
+//    digitalWrite(0,0);
+//    digitalWrite(2, 0);
+//    digitalWrite(3, 0);
+//    digitalWrite(4, 0);
+//    digitalWrite(5, 0);
+//  }
+ 
   //digitalWrite(0, HIGH);   // turn the LED on (HIGH is the voltage level)
   //delay(300);                       // wait for a second
   //digitalWrite(0, LOW);    // turn the LED off by making the voltage LOW
