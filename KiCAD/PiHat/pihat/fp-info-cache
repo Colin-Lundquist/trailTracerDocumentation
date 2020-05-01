@@ -1,4 +1,4 @@
-16950566153386495
+16966443948257310
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75257,12 +75257,40 @@ varistor SIOV
 2
 2
 trailTracer
+B340
+
+
+0
+2
+2
+trailTracer
+Breadbord layout
+
+
+0
+63
+1
+trailTracer
 Cap 1206
 
 
 0
 0
 0
+trailTracer
+Capacitor 2.5mm
+
+
+0
+0
+0
+trailTracer
+Capacitor2_5mm
+
+
+0
+2
+2
 trailTracer
 Coil
 
@@ -75278,6 +75306,34 @@ DO-214
 2
 2
 trailTracer
+Fuse_Holder_TR5
+
+
+0
+2
+2
+trailTracer
+Hole
+
+
+0
+4
+1
+trailTracer
+Holes_2
+
+
+0
+2
+2
+trailTracer
+Logo
+
+
+0
+0
+0
+trailTracer
 Pad
 
 
@@ -75291,6 +75347,20 @@ Through hole pin header THT 1x03 2.54mm single row
 0
 3
 3
+trailTracer
+SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias
+SOIC, 8 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf#page=29), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+9
+9
+trailTracer
+SOIC_IO
+
+
+0
+4
+4
 trailTracer
 SRR1050A Coil
 

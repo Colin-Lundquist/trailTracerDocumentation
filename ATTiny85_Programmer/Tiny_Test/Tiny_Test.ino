@@ -52,17 +52,9 @@ void setup() {
 void loop() {
 
 
+digitalWrite(0, HIGH);
 
 
-red++;
-blu++;
-gre++;
-
-analogWrite(0,red);
-analogWrite(1,blu);
-analogWrite(2,gre);
-
-delay(25);
   //Serial.println(analogRead(A0));
 //  
 //  if(Serial.read() > 0) {
